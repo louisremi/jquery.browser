@@ -10,6 +10,11 @@ When loaded in the page after jQuery, results are available using:
     
     jQuery.platform.<name>
     jQuery.platform.version
+    
+    // Example when tested in Firefox
+    jQuery.browser.mozilla === true;
+    // Example when tested on Android
+    jQuery.platform.android === true;
 
 When loaded in the page without jQuery or before jQuery, results are available using:
 
@@ -18,6 +23,11 @@ When loaded in the page without jQuery or before jQuery, results are available u
     
     platform.<name>
     platform.version
+    
+    // Example when tested in Firefox
+    browser.mozilla === true;
+    // Example when tested on Android
+    platform.android === true;
 
 Tested browsers
 ---------------
