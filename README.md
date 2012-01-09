@@ -1,5 +1,8 @@
 Browser and mobile platform sniffing scripts (plugin & standalone)
 
+These are minimalist scripts that weigh under 300B once minified and gzipped. They're tailored to my own needs and should be customized to suit your needs (detecting desktop operating systems for instance).
+If you are looking for a full-featured library and are ready to send 4K of JS to your users, have a look at [platform.js](https://github.com/bestiejs/platform.js).
+
 API
 ===
 
@@ -63,7 +66,7 @@ you should use future proof [feature detection](https://developer.mozilla.org/en
 There are still valid use cases for browser sniffing:
 
 - as a fallback when features can't be detected or inferred (see [The Undetectables](https://github.com/Modernizr/Modernizr/wiki/Undetectables))
-- to match the appearance of you webapp with a platform (beware, most OS's can be skinned)
+- to match the appearance of you webapp with a platform (beware, most operating systems can be skinned)
 - to offer links to specific browser extensions or mobile apps, according to the browser/platform
 
 In any case, remember that user-agent strings can be spoofed.

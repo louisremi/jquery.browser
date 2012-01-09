@@ -2,23 +2,23 @@
 
 var ua = navigator.userAgent.toLowerCase(),
 	match,
+	i = 0
 	// Useragent RegExp
-	rithing = /(ip\w+).*?os ([\w_]+)/,
-	randroid = /(android)[ \/]([\w.]+)/,
-	rblackberry = /(blackberry)(?:\d*?\/|.*?version\/)([\w.]+)/,
-	rwp = /(windows phone)( os)? ([\w.]+)/,
-	rsymbian = /(symbian)(?:os\/([\w.]+))?/;
+	rplatform = [
+		/(ip\w+).*?os ([\w_]+)/,
+		/(android)[ \/]([\w.]+)/,
+		/(blackberry)(?:\d*?\/|.*?version\/)([\w.]+)/,
+		/(windows phone)( os)? ([\w.]+)/,
+		/(symbian)(?:os\/([\w.]+))?/
+	];
 
-match = rithing.exec( ua ) ||
-	randroid.exec( ua ) ||
-	rblackberry.exec( ua ) ||
-	rwp.exec( ua ) ||
-	rsymbian.exec( ua ) ||
-	[];
-
-if ( match[1] ) {
-	$.platform = { version: match[2].split("_").join(".") || "0" };
-	$.platform[ match[1].replace(" p", "P") ] = true;
+$.platform = {};
+while ( i++ < rplatfrom.length ) {
+	if ( (match = rplatform[i].exec( ua )) && match[1] ) {
+		$.platform[ match[1].replace(" p", "P") ] = true;
+		$.platform.version = match[2].split("_").join(".") || "0";
+		break;
+	}
 }
 
 })( window.jQuery || window );
