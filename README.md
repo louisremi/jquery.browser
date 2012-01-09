@@ -4,6 +4,7 @@ API
 ===
 
 When loaded in the page after jQuery, results are available using:
+
     jQuery.browser.<name>
     jQuery.browser.version
     
@@ -11,6 +12,7 @@ When loaded in the page after jQuery, results are available using:
     jQuery.platform.version
 
 When loaded in the page without jQuery or before jQuery, results are available using:
+
     browser.<name>
     browser.version
     
