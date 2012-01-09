@@ -22,24 +22,24 @@ Tested browsers
 
 The following browser &lt;name&gt;s are being searched for in the user-agent string:
 
-- `mozilla`
-- `safari`
-- `chrome`
-- `msie`
-- `opera`
+    mozilla
+    safari
+    chrome
+    msie
+    opera
 
 Tested mobile platforms
 -----------------------
 
 The following mobile platform &lt;name&gt;s are being searched for in the user-agent string:
 
-- `ipod`
-- `iphone`
-- `ipad`
-- `android`
-- `blackberry`
-- `windowsPhone`
-- `symbian`
+    ipod
+    iphone
+    ipad
+    android
+    blackberry
+    windowsPhone
+    symbian
 
 Precautions
 ===========
