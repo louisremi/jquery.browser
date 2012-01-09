@@ -56,7 +56,7 @@ There are still valid use cases for browser sniffing:
 - to match the appearance of you webapp with a platform (beware, most OS's can be skinned)
 - to offer links to specific browser extensions or mobile apps, according to the browser/platform
 
-In any case, remeber that user-agent strings can be spoofed.
+In any case, remember that user-agent strings can be spoofed.
 
 License
 =======
