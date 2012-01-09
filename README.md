@@ -20,26 +20,26 @@ When loaded in the page without jQuery or before jQuery, results are available u
 Tested browsers
 ---------------
 
-The following browser <name>s are being searched for in the user-agent string:
+The following browser &lt;name&gt;s are being searched for in the user-agent string:
 
-- mozilla
-- safari
-- chrome
-- msie
-- opera
+- `mozilla`
+- `safari`
+- `chrome`
+- `msie`
+- `opera`
 
 Tested mobile platforms
 -----------------------
 
-The following mobile platform <name>s are being searched for in the user-agent string:
+The following mobile platform &lt;name&gt;s are being searched for in the user-agent string:
 
-- ipod
-- iphone
-- ipad
-- android
-- blackberry
-- windowsPhone
-- symbian
+- `ipod`
+- `iphone`
+- `ipad`
+- `android`
+- `blackberry`
+- `windowsPhone`
+- `symbian`
 
 Precautions
 ===========
