@@ -13,12 +13,12 @@ var ua = navigator.userAgent.toLowerCase(),
 	];
 
 $.browser = {};
-while ( i++ < rbrowsers.length ) {
+do {
 	if ( (match = rbrowsers[i].exec( ua )) && match[1] ) {
 		$.browser[ match[1] ] = true;
 		$.browser.version = match[2] || "0";
 		break;
 	}
-}
+} while ( i++ < rbrowsers.length )
 
 })( window.jQuery || window );
