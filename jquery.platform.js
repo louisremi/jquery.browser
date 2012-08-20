@@ -2,7 +2,6 @@
 
 var ua = navigator.userAgent.toLowerCase(),
 	match,
-	i = 0
 	// Useragent RegExp
 	rplatform = [
 		/(ip\w+).*?os ([\w_]+)/,
@@ -10,10 +9,11 @@ var ua = navigator.userAgent.toLowerCase(),
 		/(blackberry)(?:\d*?\/|.*?version\/)([\w.]+)/,
 		/(windows phone)( os)? ([\w.]+)/,
 		/(symbian)(?:os\/([\w.]+))?/
-	];
+	],
+	i = rplatform.length;
 
 $.platform = {};
-while ( i++ < rplatfrom.length ) {
+while ( i-- ) {
 	if ( (match = rplatform[i].exec( ua )) && match[1] ) {
 		$.platform[ match[1].replace(" p", "P") ] = true;
 		$.platform.version = match[2].split("_").join(".") || "0";
